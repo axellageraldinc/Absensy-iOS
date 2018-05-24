@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C00256FB20B56ADB00D3BC0C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00256ED20B56AA600D3BC0C /* SQLite.framework */; };
+		C00256FC20B56AEE00D3BC0C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00256ED20B56AA600D3BC0C /* SQLite.framework */; };
+		C00256FD20B56AEE00D3BC0C /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C00256ED20B56AA600D3BC0C /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C002570220B56B7200D3BC0C /* SqliteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002570120B56B7200D3BC0C /* SqliteHelper.swift */; };
+		C002570520B5849100D3BC0C /* AddMakulAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002570420B5849100D3BC0C /* AddMakulAlertView.swift */; };
+		C002570720B5867200D3BC0C /* AddMakulAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002570620B5867200D3BC0C /* AddMakulAlertViewDelegate.swift */; };
+		C002570920B58A5200D3BC0C /* AddAbsenAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002570820B58A5200D3BC0C /* AddAbsenAlertView.swift */; };
+		C002570B20B58A5F00D3BC0C /* AddAbsenAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002570A20B58A5F00D3BC0C /* AddAbsenAlertViewDelegate.swift */; };
+		C0E6483120B2A38000ACB88D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6483020B2A38000ACB88D /* AppDelegate.swift */; };
+		C0E6483620B2A38000ACB88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E6483420B2A38000ACB88D /* Main.storyboard */; };
+		C0E6483820B2A38100ACB88D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E6483720B2A38100ACB88D /* Assets.xcassets */; };
+		C0E6483B20B2A38100ACB88D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E6483920B2A38100ACB88D /* LaunchScreen.storyboard */; };
+		C0E6484620B2A38100ACB88D /* absensyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6484520B2A38100ACB88D /* absensyTests.swift */; };
+		C0E6485320B2A4C200ACB88D /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0E6485220B2A4C200ACB88D /* pacifico.ttf */; };
+		C0E6485520B2A68E00ACB88D /* MakulTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6485420B2A68E00ACB88D /* MakulTableViewController.swift */; };
+		C0E6485720B2A6A900ACB88D /* MakulTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6485620B2A6A900ACB88D /* MakulTableViewCell.swift */; };
+		C0E6485920B2AA6600ACB88D /* MataKuliah.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6485820B2AA6600ACB88D /* MataKuliah.swift */; };
+		C0F0672520B6F4A100341AB0 /* MakulTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F0672420B6F4A100341AB0 /* MakulTableViewController.xib */; };
+		C0F0672F20B6F86800341AB0 /* MakulTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F0672E20B6F86800341AB0 /* MakulTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C00256EC20B56AA600D3BC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		C00256EE20B56AA600D3BC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		C00256F020B56AA600D3BC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		C00256F220B56AA600D3BC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		C00256F420B56AA600D3BC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		C00256F620B56AA600D3BC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		C00256F820B56AA600D3BC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		C00256FE20B56AEE00D3BC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		C0E6484220B2A38100ACB88D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0E6482520B2A38000ACB88D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0E6482C20B2A38000ACB88D;
+			remoteInfo = absensy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C002570020B56AEE00D3BC0C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C00256FD20B56AEE00D3BC0C /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		C002570120B56B7200D3BC0C /* SqliteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteHelper.swift; sourceTree = "<group>"; };
+		C002570420B5849100D3BC0C /* AddMakulAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMakulAlertView.swift; sourceTree = "<group>"; };
+		C002570620B5867200D3BC0C /* AddMakulAlertViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMakulAlertViewDelegate.swift; sourceTree = "<group>"; };
+		C002570820B58A5200D3BC0C /* AddAbsenAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAbsenAlertView.swift; sourceTree = "<group>"; };
+		C002570A20B58A5F00D3BC0C /* AddAbsenAlertViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAbsenAlertViewDelegate.swift; sourceTree = "<group>"; };
+		C0E6482D20B2A38000ACB88D /* absensy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = absensy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E6483020B2A38000ACB88D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0E6483520B2A38000ACB88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0E6483720B2A38100ACB88D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0E6483A20B2A38100ACB88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0E6483C20B2A38100ACB88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E6484120B2A38100ACB88D /* absensyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = absensyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E6484520B2A38100ACB88D /* absensyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = absensyTests.swift; sourceTree = "<group>"; };
+		C0E6484720B2A38100ACB88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E6485220B2A4C200ACB88D /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
+		C0E6485420B2A68E00ACB88D /* MakulTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakulTableViewController.swift; sourceTree = "<group>"; };
+		C0E6485620B2A6A900ACB88D /* MakulTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakulTableViewCell.swift; sourceTree = "<group>"; };
+		C0E6485820B2AA6600ACB88D /* MataKuliah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MataKuliah.swift; sourceTree = "<group>"; };
+		C0F0672420B6F4A100341AB0 /* MakulTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakulTableViewController.xib; sourceTree = "<group>"; };
+		C0F0672E20B6F86800341AB0 /* MakulTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakulTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0E6482A20B2A38000ACB88D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00256FC20B56AEE00D3BC0C /* SQLite.framework in Frameworks */,
+				C00256FB20B56ADB00D3BC0C /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E6483E20B2A38100ACB88D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C00256E320B56AA600D3BC0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C00256ED20B56AA600D3BC0C /* SQLite.framework */,
+				C00256EF20B56AA600D3BC0C /* SQLiteTests iOS.xctest */,
+				C00256F120B56AA600D3BC0C /* SQLite.framework */,
+				C00256F320B56AA600D3BC0C /* SQLiteTests Mac.xctest */,
+				C00256F520B56AA600D3BC0C /* SQLite.framework */,
+				C00256F720B56AA600D3BC0C /* SQLiteTests tvOS.xctest */,
+				C00256F920B56AA600D3BC0C /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C00256FA20B56ADB00D3BC0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0E6482420B2A38000ACB88D = {
+			isa = PBXGroup;
+			children = (
+				C0E6482F20B2A38000ACB88D /* absensy */,
+				C0E6485120B2A4A500ACB88D /* fonts */,
+				C0E6484420B2A38100ACB88D /* absensyTests */,
+				C0E6482E20B2A38000ACB88D /* Products */,
+				C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */,
+				C00256FA20B56ADB00D3BC0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0E6482E20B2A38000ACB88D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0E6482D20B2A38000ACB88D /* absensy.app */,
+				C0E6484120B2A38100ACB88D /* absensyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0E6482F20B2A38000ACB88D /* absensy */ = {
+			isa = PBXGroup;
+			children = (
+				C0F0672D20B6F85500341AB0 /* xib */,
+				C0E6483020B2A38000ACB88D /* AppDelegate.swift */,
+				C0E6483420B2A38000ACB88D /* Main.storyboard */,
+				C0E6483720B2A38100ACB88D /* Assets.xcassets */,
+				C0E6483920B2A38100ACB88D /* LaunchScreen.storyboard */,
+				C0E6483C20B2A38100ACB88D /* Info.plist */,
+				C0E6485420B2A68E00ACB88D /* MakulTableViewController.swift */,
+				C0E6485620B2A6A900ACB88D /* MakulTableViewCell.swift */,
+				C0E6485820B2AA6600ACB88D /* MataKuliah.swift */,
+				C002570120B56B7200D3BC0C /* SqliteHelper.swift */,
+				C002570420B5849100D3BC0C /* AddMakulAlertView.swift */,
+				C002570620B5867200D3BC0C /* AddMakulAlertViewDelegate.swift */,
+				C002570820B58A5200D3BC0C /* AddAbsenAlertView.swift */,
+				C002570A20B58A5F00D3BC0C /* AddAbsenAlertViewDelegate.swift */,
+			);
+			path = absensy;
+			sourceTree = "<group>";
+		};
+		C0E6484420B2A38100ACB88D /* absensyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0E6484520B2A38100ACB88D /* absensyTests.swift */,
+				C0E6484720B2A38100ACB88D /* Info.plist */,
+			);
+			path = absensyTests;
+			sourceTree = "<group>";
+		};
+		C0E6485120B2A4A500ACB88D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C0E6485220B2A4C200ACB88D /* pacifico.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		C0F0672D20B6F85500341AB0 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				C0F0672420B6F4A100341AB0 /* MakulTableViewController.xib */,
+				C0F0672E20B6F86800341AB0 /* MakulTableViewCell.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0E6482C20B2A38000ACB88D /* absensy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E6484A20B2A38100ACB88D /* Build configuration list for PBXNativeTarget "absensy" */;
+			buildPhases = (
+				C0E6482920B2A38000ACB88D /* Sources */,
+				C0E6482A20B2A38000ACB88D /* Frameworks */,
+				C0E6482B20B2A38000ACB88D /* Resources */,
+				C002570020B56AEE00D3BC0C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C00256FF20B56AEE00D3BC0C /* PBXTargetDependency */,
+			);
+			name = absensy;
+			productName = absensy;
+			productReference = C0E6482D20B2A38000ACB88D /* absensy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0E6484020B2A38100ACB88D /* absensyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E6484D20B2A38100ACB88D /* Build configuration list for PBXNativeTarget "absensyTests" */;
+			buildPhases = (
+				C0E6483D20B2A38100ACB88D /* Sources */,
+				C0E6483E20B2A38100ACB88D /* Frameworks */,
+				C0E6483F20B2A38100ACB88D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0E6484320B2A38100ACB88D /* PBXTargetDependency */,
+			);
+			name = absensyTests;
+			productName = absensyTests;
+			productReference = C0E6484120B2A38100ACB88D /* absensyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0E6482520B2A38000ACB88D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Axellageraldinc Adryamarthanino";
+				TargetAttributes = {
+					C0E6482C20B2A38000ACB88D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					C0E6484020B2A38100ACB88D = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = C0E6482C20B2A38000ACB88D;
+					};
+				};
+			};
+			buildConfigurationList = C0E6482820B2A38000ACB88D /* Build configuration list for PBXProject "absensy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0E6482420B2A38000ACB88D;
+			productRefGroup = C0E6482E20B2A38000ACB88D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C00256E320B56AA600D3BC0C /* Products */;
+					ProjectRef = C00256E220B56AA600D3BC0C /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C0E6482C20B2A38000ACB88D /* absensy */,
+				C0E6484020B2A38100ACB88D /* absensyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C00256ED20B56AA600D3BC0C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = C00256EC20B56AA600D3BC0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C00256EF20B56AA600D3BC0C /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = C00256EE20B56AA600D3BC0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C00256F120B56AA600D3BC0C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = C00256F020B56AA600D3BC0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C00256F320B56AA600D3BC0C /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = C00256F220B56AA600D3BC0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C00256F520B56AA600D3BC0C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = C00256F420B56AA600D3BC0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C00256F720B56AA600D3BC0C /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = C00256F620B56AA600D3BC0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C00256F920B56AA600D3BC0C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = C00256F820B56AA600D3BC0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0E6482B20B2A38000ACB88D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F0672F20B6F86800341AB0 /* MakulTableViewCell.xib in Resources */,
+				C0E6483B20B2A38100ACB88D /* LaunchScreen.storyboard in Resources */,
+				C0E6483820B2A38100ACB88D /* Assets.xcassets in Resources */,
+				C0E6485320B2A4C200ACB88D /* pacifico.ttf in Resources */,
+				C0F0672520B6F4A100341AB0 /* MakulTableViewController.xib in Resources */,
+				C0E6483620B2A38000ACB88D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E6483F20B2A38100ACB88D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0E6482920B2A38000ACB88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E6485720B2A6A900ACB88D /* MakulTableViewCell.swift in Sources */,
+				C0E6485520B2A68E00ACB88D /* MakulTableViewController.swift in Sources */,
+				C0E6485920B2AA6600ACB88D /* MataKuliah.swift in Sources */,
+				C002570220B56B7200D3BC0C /* SqliteHelper.swift in Sources */,
+				C002570720B5867200D3BC0C /* AddMakulAlertViewDelegate.swift in Sources */,
+				C002570520B5849100D3BC0C /* AddMakulAlertView.swift in Sources */,
+				C0E6483120B2A38000ACB88D /* AppDelegate.swift in Sources */,
+				C002570B20B58A5F00D3BC0C /* AddAbsenAlertViewDelegate.swift in Sources */,
+				C002570920B58A5200D3BC0C /* AddAbsenAlertView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E6483D20B2A38100ACB88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E6484620B2A38100ACB88D /* absensyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C00256FF20B56AEE00D3BC0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = C00256FE20B56AEE00D3BC0C /* PBXContainerItemProxy */;
+		};
+		C0E6484320B2A38100ACB88D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0E6482C20B2A38000ACB88D /* absensy */;
+			targetProxy = C0E6484220B2A38100ACB88D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0E6483420B2A38000ACB88D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0E6483520B2A38000ACB88D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0E6483920B2A38100ACB88D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0E6483A20B2A38100ACB88D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0E6484820B2A38100ACB88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0E6484920B2A38100ACB88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0E6484B20B2A38100ACB88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9BG98L54X;
+				INFOPLIST_FILE = absensy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axell.absensy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0E6484C20B2A38100ACB88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9BG98L54X;
+				INFOPLIST_FILE = absensy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axell.absensy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0E6484E20B2A38100ACB88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = absensyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axell.absensyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/absensy.app/absensy";
+			};
+			name = Debug;
+		};
+		C0E6484F20B2A38100ACB88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = absensyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.axell.absensyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/absensy.app/absensy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E6482820B2A38000ACB88D /* Build configuration list for PBXProject "absensy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E6484820B2A38100ACB88D /* Debug */,
+				C0E6484920B2A38100ACB88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E6484A20B2A38100ACB88D /* Build configuration list for PBXNativeTarget "absensy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E6484B20B2A38100ACB88D /* Debug */,
+				C0E6484C20B2A38100ACB88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E6484D20B2A38100ACB88D /* Build configuration list for PBXNativeTarget "absensyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E6484E20B2A38100ACB88D /* Debug */,
+				C0E6484F20B2A38100ACB88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0E6482520B2A38000ACB88D /* Project object */;
+}
