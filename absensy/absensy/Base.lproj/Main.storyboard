@@ -75,7 +75,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wZW-qH-2Ub">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="btnAddMakulClicked:" destination="v9Z-h5-sET" id="WPj-pe-EUK"/>
+                                <action selector="btnAddMakulClicked:" destination="v9Z-h5-sET" id="5gI-FN-Smu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -24,8 +24,6 @@
 		C0E6485520B2A68E00ACB88D /* MakulTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6485420B2A68E00ACB88D /* MakulTableViewController.swift */; };
 		C0E6485720B2A6A900ACB88D /* MakulTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6485620B2A6A900ACB88D /* MakulTableViewCell.swift */; };
 		C0E6485920B2AA6600ACB88D /* MataKuliah.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6485820B2AA6600ACB88D /* MataKuliah.swift */; };
-		C0F0672520B6F4A100341AB0 /* MakulTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F0672420B6F4A100341AB0 /* MakulTableViewController.xib */; };
-		C0F0672F20B6F86800341AB0 /* MakulTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F0672E20B6F86800341AB0 /* MakulTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,8 +126,6 @@
 		C0E6485420B2A68E00ACB88D /* MakulTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakulTableViewController.swift; sourceTree = "<group>"; };
 		C0E6485620B2A6A900ACB88D /* MakulTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakulTableViewCell.swift; sourceTree = "<group>"; };
 		C0E6485820B2AA6600ACB88D /* MataKuliah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MataKuliah.swift; sourceTree = "<group>"; };
-		C0F0672420B6F4A100341AB0 /* MakulTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakulTableViewController.xib; sourceTree = "<group>"; };
-		C0F0672E20B6F86800341AB0 /* MakulTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakulTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +193,6 @@
 		C0E6482F20B2A38000ACB88D /* absensy */ = {
 			isa = PBXGroup;
 			children = (
-				C0F0672D20B6F85500341AB0 /* xib */,
 				C0E6483020B2A38000ACB88D /* AppDelegate.swift */,
 				C0E6483420B2A38000ACB88D /* Main.storyboard */,
 				C0E6483720B2A38100ACB88D /* Assets.xcassets */,
@@ -230,15 +225,6 @@
 				C0E6485220B2A4C200ACB88D /* pacifico.ttf */,
 			);
 			path = fonts;
-			sourceTree = "<group>";
-		};
-		C0F0672D20B6F85500341AB0 /* xib */ = {
-			isa = PBXGroup;
-			children = (
-				C0F0672420B6F4A100341AB0 /* MakulTableViewController.xib */,
-				C0F0672E20B6F86800341AB0 /* MakulTableViewCell.xib */,
-			);
-			path = xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,11 +368,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0F0672F20B6F86800341AB0 /* MakulTableViewCell.xib in Resources */,
 				C0E6483B20B2A38100ACB88D /* LaunchScreen.storyboard in Resources */,
 				C0E6483820B2A38100ACB88D /* Assets.xcassets in Resources */,
 				C0E6485320B2A4C200ACB88D /* pacifico.ttf in Resources */,
-				C0F0672520B6F4A100341AB0 /* MakulTableViewController.xib in Resources */,
 				C0E6483620B2A38000ACB88D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

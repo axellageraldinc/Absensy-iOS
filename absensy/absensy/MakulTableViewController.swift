@@ -12,6 +12,7 @@ class MakulTableViewController: UITableViewController {
     let sqliteHelper = SqliteHelper()
     var makulList = [MataKuliah]()
 
+    @IBOutlet weak var xview: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         makulList = sqliteHelper.getAllMataKuliahData()
