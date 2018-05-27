@@ -14,6 +14,7 @@ class AddMakulAlertView: UIViewController {
     @IBOutlet weak var txtInputNamaMataKuliah: UITextField!
     @IBOutlet weak var txtInputJumlahAbsen: UITextField!
     @IBOutlet weak var btnSimpan: UIButton!
+    @IBOutlet weak var datePickerWaktuKuliah: UIDatePicker!
     
     var delegate: AddMakulAlertViewDelegate?
     let alertViewGrayColor = UIColor(red: 224.0/255.0, green: 224.0/255.0, blue: 224.0/255.0, alpha: 1)
@@ -51,7 +52,7 @@ class AddMakulAlertView: UIViewController {
     @IBAction func btnSimpanMataKuliahClicked(_ sender: UIButton) {
         txtInputNamaMataKuliah.resignFirstResponder()
         txtInputJumlahAbsen.resignFirstResponder()
-        delegate?.btnSimpanClicked(namaMakul: txtInputNamaMataKuliah.text!, jumlahAbsen: Int(txtInputJumlahAbsen.text!)!)
+        delegate?.btnSimpanClicked(namaMakul: txtInputNamaMataKuliah.text!, jumlahAbsen: Int(txtInputJumlahAbsen.text!)!, dateKuliah: datePickerWaktuKuliah.date)
         self.dismiss(animated: true, completion: nil)
     }
     

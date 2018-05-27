@@ -13,6 +13,7 @@ class MakulTableViewCell: UITableViewCell {
     @IBOutlet weak var lblIdMataKuliah: UILabel!
     @IBOutlet weak var lblNamaMataKuliah: UILabel!
     @IBOutlet weak var lblJumlahAbsen: UILabel!
+    @IBOutlet weak var lblJadwalKuliah: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

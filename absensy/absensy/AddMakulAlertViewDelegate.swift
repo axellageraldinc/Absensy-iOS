@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AddMakulAlertViewDelegate: class {
-    func btnSimpanClicked(namaMakul: String, jumlahAbsen: Int)
+    func btnSimpanClicked(namaMakul: String, jumlahAbsen: Int, dateKuliah: Date)
 }

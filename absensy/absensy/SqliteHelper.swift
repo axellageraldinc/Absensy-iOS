@@ -16,6 +16,8 @@ class SqliteHelper {
     private let id = Expression<String>("id")
     private let namaMataKuliah = Expression<String>("nama_makul")
     private let jumlahAbsenKuliah = Expression<Int>("jumlah_absen_mata_kuliah")
+    private let hariKuliah = Expression<String>("hariKuliah")
+    private let jamKuliah = Expression<String>("jamKuliah")
     
     init(){
         let path = NSSearchPathForDirectoriesInDomains(
@@ -38,6 +40,8 @@ class SqliteHelper {
                 table.column(id, primaryKey: true)
                 table.column(namaMataKuliah, unique: true)
                 table.column(jumlahAbsenKuliah)
+                table.column(hariKuliah)
+                table.column(jamKuliah)
             })
             print("Create table success!")
         } catch {
@@ -50,7 +54,9 @@ class SqliteHelper {
         do {
             let insert = tableMataKuliah.insert(self.id <- mataKuliah.id,
                                                 self.namaMataKuliah <- mataKuliah.nama,
-                                                self.jumlahAbsenKuliah <- mataKuliah.jumlahAbsen)
+                                                self.jumlahAbsenKuliah <- mataKuliah.jumlahAbsen,
+                                                self.hariKuliah <- mataKuliah.hariKuliah,
+                                                self.jamKuliah <- mataKuliah.jamKuliah)
             let id = try db?.run(insert)
             isInsertSuccess=id!
         } catch {
@@ -67,7 +73,9 @@ class SqliteHelper {
                 mataKuliah.append(MataKuliah(
                     id: data[id],
                     nama: data[namaMataKuliah],
-                    jumlahAbsen: data[jumlahAbsenKuliah]))
+                    jumlahAbsen: data[jumlahAbsenKuliah],
+                    hariKuliah: data[hariKuliah],
+                    jamKuliah: data[jamKuliah]))
             }
         } catch {
             print("Get All Mata Kuliah Data failed!")
@@ -92,6 +100,24 @@ class SqliteHelper {
         do {
             let update = mataKuliahData.update([
                 jumlahAbsenKuliah <- mataKuliah.jumlahAbsen+1
+                ])
+            if try db!.run(update) > 0 {
+                return true
+            }
+        } catch {
+            print("Update failed: \(error)")
+        }
+        return false
+    }
+    
+    func updateMataKuliah(cid:String, mataKuliah: MataKuliah) -> Bool {
+        let mataKuliahData = tableMataKuliah.filter(id == cid)
+        do {
+            let update = mataKuliahData.update([
+                namaMataKuliah <- mataKuliah.nama,
+                jumlahAbsenKuliah <- mataKuliah.jumlahAbsen+1,
+                hariKuliah <- mataKuliah.hariKuliah,
+                jamKuliah <- mataKuliah.jamKuliah
                 ])
             if try db!.run(update) > 0 {
                 return true

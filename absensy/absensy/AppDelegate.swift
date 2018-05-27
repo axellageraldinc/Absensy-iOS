@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,10 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        let homeViewController = MakulTableViewController()
-//        window!.rootViewController = homeViewController
-//        window!.makeKeyAndVisible()
+        UNUserNotificationCenter.current().delegate = self
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (accepted, _) in
+            if !accepted {
+                print("Notification access denied.")
+            }
+        }
         return true
     }
 
@@ -44,7 +47,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
 
-
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if response.notification.request.identifier.contains("saat") {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            guard let rootVc = appDelegate.window?.rootViewController else { return }
+            let alert = UIAlertController(title: "Update absenmu", message: "", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(action)
+            rootVc.present(alert, animated: true, completion: nil)
+        }
+    }
 }
 

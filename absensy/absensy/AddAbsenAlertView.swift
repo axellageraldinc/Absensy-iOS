@@ -20,6 +20,8 @@ class AddAbsenAlertView: UIViewController {
     var id: String?
     var namaMataKuliah: String?
     var jumlahKosong: Int?
+    var hariKuliah: String?
+    var jamKuliah: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +56,7 @@ class AddAbsenAlertView: UIViewController {
     }
     
     @IBAction func btnAbsenKuliahClicked(_ sender: UIButton) {
-        delegate?.btnAbsenKuliahIniClicked(mataKuliah: MataKuliah(id: id!, nama: namaMataKuliah!, jumlahAbsen: jumlahKosong!))
+        delegate?.btnAbsenKuliahIniClicked(mataKuliah: MataKuliah(id: id!, nama: namaMataKuliah!, jumlahAbsen: jumlahKosong!, hariKuliah: hariKuliah!, jamKuliah: jamKuliah!))
         self.dismiss(animated: true, completion: nil)
     }
 }

@@ -12,10 +12,14 @@ class MataKuliah {
     var id: String
     var nama: String = ""
     var jumlahAbsen: Int
+    var hariKuliah: String
+    var jamKuliah: String
     
-    init(id: String, nama: String, jumlahAbsen: Int) {
+    init(id: String, nama: String, jumlahAbsen: Int, hariKuliah: String, jamKuliah: String) {
         self.id=id
         self.nama=nama
         self.jumlahAbsen=jumlahAbsen
+        self.hariKuliah=hariKuliah
+        self.jamKuliah=jamKuliah
     }
 }
